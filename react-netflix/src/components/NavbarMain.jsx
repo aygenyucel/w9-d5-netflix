@@ -1,6 +1,4 @@
-import { ButtonGroup, Container, Dropdown, Nav, Navbar } from "react-bootstrap";
-import netflixLogo from "../assets/netflix_logo.png";
-import avatar from "../assets/avatar.png";
+import { Container, Dropdown, Nav, Navbar } from "react-bootstrap";
 import "./NavbarMain.css";
 
 const { Component } = require("react");
@@ -11,7 +9,7 @@ class NavbarMain extends Component {
       <Navbar className="navbar-expand-lg navbar-dark">
         <Container fluid>
           <Navbar.Brand href="http://ubeytdemir.me/netflix-ui">
-            <img src={netflixLogo} alt="netflix logo" id="logo" />
+            <img src="assets/netflix_logo.png" alt="netflix logo" id="logo" />
           </Navbar.Brand>
           <Navbar.Toggle
             type="button"
@@ -80,12 +78,16 @@ class NavbarMain extends Component {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img src={avatar} id="avatar" alt="avatar" />
+                    <img src="assets/avatar.png" id="avatar" alt="avatar" />
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="http://ubeytdemir.me/netflix-ui/profile.html">
                       <div className="d-flex align-items-center">
-                        <img src={avatar} id="avatar-small" alt="avatar" />
+                        <img
+                          src="assets/avatar.png"
+                          id="avatar-small"
+                          alt="avatar"
+                        />
                         Ubeyt
                       </div>
                     </Dropdown.Item>
