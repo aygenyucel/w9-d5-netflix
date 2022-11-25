@@ -9,8 +9,8 @@ import {
   Row,
 } from "react-bootstrap";
 import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+import FooterMain from "./FooterMain";
 import NavbarMain from "./NavbarMain";
-
 class Home extends Component {
   render() {
     return (
@@ -46,11 +46,11 @@ class Home extends Component {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-text-left"
+                    className="bi bi-text-left"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
                     />
                   </svg>
@@ -61,7 +61,7 @@ class Home extends Component {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-grid"
+                    className="bi bi-grid"
                     viewBox="0 0 16 16"
                   >
                     <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
@@ -84,42 +84,42 @@ class Home extends Component {
                       <Row>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media6.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media7.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media8.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media9.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media10.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media11.jpg"
                             alt=""
                           />
@@ -132,42 +132,42 @@ class Home extends Component {
                       <Row>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media6.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media7.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media8.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media9.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media10.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media11.jpg"
                             alt=""
                           />
@@ -210,42 +210,42 @@ class Home extends Component {
                     <Row>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media0.jpg"
                           alt=""
                         />
                       </Col>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media1.jpg"
                           alt=""
                         />
                       </Col>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media2.jpg"
                           alt=""
                         />
                       </Col>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media3.jpg"
                           alt=""
                         />
                       </Col>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media4.jpg"
                           alt=""
                         />
                       </Col>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media5.jpg"
                           alt=""
                         />
@@ -258,42 +258,42 @@ class Home extends Component {
                     <Row>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media0.jpg"
                           alt=""
                         />
                       </Col>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media1.jpg"
                           alt=""
                         />
                       </Col>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media2.jpg"
                           alt=""
                         />
                       </Col>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media3.jpg"
                           alt=""
                         />
                       </Col>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media4.jpg"
                           alt=""
                         />
                       </Col>
                       <Col md={2}>
                         <img
-                          class="movie-cover"
+                          className="movie-cover"
                           src="assets/media/media5.jpg"
                           alt=""
                         />
@@ -337,42 +337,42 @@ class Home extends Component {
                       <Row>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media6.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media7.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media8.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media9.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media10.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media11.jpg"
                             alt=""
                           />
@@ -385,42 +385,42 @@ class Home extends Component {
                       <Row>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media6.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media7.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media8.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media9.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media10.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media11.jpg"
                             alt=""
                           />
@@ -464,42 +464,42 @@ class Home extends Component {
                       <Row>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media12.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media13.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media14.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media15.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media16.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media17.jpg"
                             alt=""
                           />
@@ -512,42 +512,42 @@ class Home extends Component {
                       <Row>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media12.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media13.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media14.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media15.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media16.jpg"
                             alt=""
                           />
                         </Col>
                         <Col md={2}>
                           <img
-                            class="movie-cover"
+                            className="movie-cover"
                             src="assets/media/media17.jpg"
                             alt=""
                           />
@@ -584,6 +584,7 @@ class Home extends Component {
             </div>
           </div>
         </Container>
+        <FooterMain />
       </>
     );
   }
