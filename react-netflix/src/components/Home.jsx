@@ -200,6 +200,134 @@ class Home extends Component {
               </Button> */}
               </Carousel>
             </div>
+            <div className="movie-gallery mt-4">
+              <h5 className="text-light mt-2 mb-2 d-flex flex-start">
+                Watch It Again
+              </h5>
+              <Carousel>
+                <Carousel.Item>
+                  <div className="movie-row">
+                    <Row>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media6.jpg"
+                          alt=""
+                        />
+                      </Col>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media7.jpg"
+                          alt=""
+                        />
+                      </Col>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media8.jpg"
+                          alt=""
+                        />
+                      </Col>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media9.jpg"
+                          alt=""
+                        />
+                      </Col>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media10.jpg"
+                          alt=""
+                        />
+                      </Col>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media11.jpg"
+                          alt=""
+                        />
+                      </Col>
+                    </Row>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="movie-row">
+                    <Row>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media6.jpg"
+                          alt=""
+                        />
+                      </Col>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media7.jpg"
+                          alt=""
+                        />
+                      </Col>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media8.jpg"
+                          alt=""
+                        />
+                      </Col>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media9.jpg"
+                          alt=""
+                        />
+                      </Col>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media10.jpg"
+                          alt=""
+                        />
+                      </Col>
+                      <Col xs={2}>
+                        <img
+                          className="movie-cover"
+                          src="assets/media/media11.jpg"
+                          alt=""
+                        />
+                      </Col>
+                    </Row>
+                  </div>
+                </Carousel.Item>
+
+                {/* <Button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#watch-it-again"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </Button>
+              <Button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#watch-it-again"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </Button> */}
+              </Carousel>
+            </div>
           </Container>
         </Container>
         <FooterMain />

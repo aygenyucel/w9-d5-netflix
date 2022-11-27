@@ -91,6 +91,11 @@
   margin-left: 4em;
 }
 
+#btn-service-code {
+  background-color: transparent;
+  border-radius: 0px;
+}
+
 /* .genre-details .dropdown .dropdown-toggle {
   background-color: red;
 } */
