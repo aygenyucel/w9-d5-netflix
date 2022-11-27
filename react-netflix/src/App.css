@@ -75,12 +75,14 @@
 .icon {
   margin: 4px 10px;
 }
+.navbar {
+  padding: 0px !important;
+}
 
 .navbar-nav .nav-item {
   display: flex;
 }
 .genre-details {
-  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
