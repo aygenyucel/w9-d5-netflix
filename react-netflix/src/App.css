@@ -82,6 +82,11 @@
 .navbar-nav .nav-item {
   display: flex;
 }
+
+.footer-col .nav-item {
+  justify-content: start;
+  font-size: 0.8rem;
+}
 .genre-details {
   display: flex;
   align-items: center;

@@ -329,8 +329,11 @@ class Home extends Component {
               </Carousel>
             </div>
           </Container>
+
+          <Container>
+            <FooterMain />
+          </Container>
         </Container>
-        <FooterMain />
       </>
     );
   }
