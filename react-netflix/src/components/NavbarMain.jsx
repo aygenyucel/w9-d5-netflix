@@ -5,7 +5,7 @@ const { Component } = require("react");
 class NavbarMain extends Component {
   render() {
     return (
-      <Navbar className="navbar-expand-lg navbar-dark">
+      <Navbar expand="lg" className=" navbar-dark">
         <Container fluid>
           <Navbar.Brand href="http://ubeytdemir.me/netflix-ui">
             <img src="assets/netflix_logo.png" alt="netflix logo" id="logo" />
@@ -15,14 +15,15 @@ class NavbarMain extends Component {
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
 
-          <Navbar.Collapse className="collapse" id="navbarSupportedContent">
-            <Nav className="me-auto mb-2 mb-lg-0">
+          <Navbar.Collapse
+            className=" align-items-start flex-lg-row justify-content-lg-between align-items-lg-center"
+            id="navbarSupportedContent"
+          >
+            <Nav className="me-auto mb-lg-0 d-lg-flex align-items-lg-center">
               <Nav.Item>
                 <Nav.Link href="http://ubeytdemir.me/netflix-ui">Home</Nav.Link>
               </Nav.Item>
@@ -39,7 +40,7 @@ class NavbarMain extends Component {
                 <Nav.Link href="#">My List</Nav.Link>
               </Nav.Item>
             </Nav>
-            <Nav>
+            <Nav className="d-flex align-items-lg-center">
               <Nav.Item>
                 <Nav.Link className="active" aria-current="page" href="#">
                   <svg
@@ -74,12 +75,12 @@ class NavbarMain extends Component {
               <Nav.Item>
                 <Dropdown>
                   <Dropdown.Toggle
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    id="dropdown-basic"
+                    // className="custom-dropdown-toggle"
                   >
                     <img src="assets/avatar.png" id="avatar" alt="avatar" />
                   </Dropdown.Toggle>
-                  <Dropdown.Menu>
+                  <Dropdown.Menu variant="dark" id="dropdown-menu-id">
                     <Dropdown.Item href="http://ubeytdemir.me/netflix-ui/profile.html">
                       <div className="d-flex align-items-center">
                         <img
@@ -97,7 +98,7 @@ class NavbarMain extends Component {
                       Account
                     </Dropdown.Item>
                     <Dropdown.Item href="#">Help Center</Dropdown.Item>
-                    <Dropdown.Divider></Dropdown.Divider>
+                    <hr />
                     <Dropdown.Item href="#">Signout Netflix</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
