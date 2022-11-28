@@ -1,87 +1,12 @@
 import { Component } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Carousel,
-  Container,
-  Dropdown,
-  Row,
-} from "react-bootstrap";
+import { Button, ButtonGroup, Container, Dropdown } from "react-bootstrap";
 import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+import AllMovies from "./AllMovies";
 import FooterMain from "./FooterMain";
 import NavbarMain from "./NavbarMain";
-import SingleMovie from "./SingleMovie";
-
-// api key: d54c1d6b
-// The endpoint for performing a search looks like this:
-// http://www.omdbapi.com/?apikey=[PUT_YOUR_API_KEY_HERE]&s=harry%20potter
 
 class Home extends Component {
-  state = {
-    movieData: [],
-    searchQuery: "harry-potter",
-    movieNumber: "",
-  };
-
-  fetchData = async () => {
-    try {
-      let response = await fetch(
-        `http://www.omdbapi.com/?apikey=d54c1d6b&s=${this.state.searchQuery}`
-      );
-
-      if (response.ok) {
-        let data = await response.json();
-        console.log(data);
-        this.setState({
-          ...this.state,
-          movieData: data.Search,
-          movieNumber: data.Search.length,
-        });
-      } else {
-        console.log("error when fetching data..");
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  componentDidMount() {
-    this.fetchData();
-  }
-
   render() {
-    let moviesRow = [];
-    let slideNumber = Math.floor(this.state.movieNumber / 6) + 1;
-    const displayMoviesRow = () => {
-      for (let i = 0; i < slideNumber; i++) {
-        moviesRow.push(
-          <Carousel.Item key={i}>
-            <div className="movie-row">
-              <Row>
-                {this.state.movieData.slice(i * 6, (i + 1) * 6).map((movie) => {
-                  return (
-                    <SingleMovie poster={movie.Poster} key={movie.imdbID} />
-                  );
-                })}
-              </Row>
-            </div>
-          </Carousel.Item>
-        );
-      }
-      return moviesRow;
-    };
-
-    const displayMovieContainer = (movieName) => {
-      return (
-        <Container fluid>
-          <h5 className="text-light mt-2 mb-2 d-flex flex-start">
-            {movieName}
-          </h5>
-          <Carousel>{displayMoviesRow()}</Carousel>
-        </Container>
-      );
-    };
-
     return (
       <>
         <Container fluid>
@@ -141,60 +66,16 @@ class Home extends Component {
             </div>
           </Container>
 
-          {displayMovieContainer("Harry Potter")}
-          {/* <Carousel.Item>
-                  <div className="movie-row">
-                    <Row>
-                      <SingleMovie poster={this.state.moviePoster} />
-                    </Row>
-                  </div>
-                </Carousel.Item> */}
+          <AllMovies searchQuery="harry-potter" />
+          <AllMovies searchQuery="lord-of-the-rings" />
+          <AllMovies searchQuery="pirates-of-the-caribbean" />
 
           {/* <Carousel.Item>
                   <div className="movie-row">
                     <Row>
-                      <Col xs={2}>
-                        <img
-                          className="movie-cover"
-                          src="assets/media/media6.jpg"
-                          alt=""
-                        />
-                      </Col>
-                      <Col xs={2}>
-                        <img
-                          className="movie-cover"
-                          src="assets/media/media7.jpg"
-                          alt=""
-                        />
-                      </Col>
-                      <Col xs={2}>
-                        <img
-                          className="movie-cover"
-                          src="assets/media/media8.jpg"
-                          alt=""
-                        />
-                      </Col>
-                      <Col xs={2}>
-                        <img
-                          className="movie-cover"
-                          src="assets/media/media9.jpg"
-                          alt=""
-                        />
-                      </Col>
-                      <Col xs={2}>
-                        <img
-                          className="movie-cover"
-                          src="assets/media/media10.jpg"
-                          alt=""
-                        />
-                      </Col>
-                      <Col xs={2}>
-                        <img
-                          className="movie-cover"
-                          src="assets/media/media11.jpg"
-                          alt=""
-                        />
-                      </Col>
+                      <SingleMovie poster={this.state.moviePoster} />
+                      <SingleMovie poster={this.state.moviePoster} />
+                      <SingleMovie poster={this.state.moviePoster} />
                     </Row>
                   </div>
                 </Carousel.Item> */}
