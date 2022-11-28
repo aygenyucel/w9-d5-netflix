@@ -69,7 +69,6 @@ class Home extends Component {
           <AllMovies searchQuery="harry-potter" />
           <AllMovies searchQuery="lord-of-the-rings" />
           <AllMovies searchQuery="pirates-of-the-caribbean" />
-
           {/* <Carousel.Item>
                   <div className="movie-row">
                     <Row>

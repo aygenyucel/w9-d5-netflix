@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Carousel, Container, Row } from "react-bootstrap";
+import { Alert, Carousel, Container, Row, Spinner } from "react-bootstrap";
 import SingleMovie from "./SingleMovie";
 
 class AllMovies extends Component {
@@ -7,6 +7,8 @@ class AllMovies extends Component {
     movieData: [],
     movieNumber: "",
     movieName: "",
+    isLoading: true,
+    isError: false,
   };
 
   fetchData = async (searchQuery) => {
@@ -25,12 +27,21 @@ class AllMovies extends Component {
           movieName: this.capitalizeFirstLetters(
             searchQuery.split("-").join(" ")
           ),
+          isLoading: false,
         });
       } else {
         console.log("error when fetching data..");
+        setTimeout(
+          this.setState({ ...this.state, isLoading: true, isError: true }),
+          1000
+        );
       }
     } catch (error) {
       console.log(error);
+      this.setState({
+        isLoading: false,
+        isError: true,
+      });
     }
   };
 
@@ -78,7 +89,18 @@ class AllMovies extends Component {
         </Container>
       );
     };
-    return <>{displayMovieContainer()}</>;
+    return (
+      <>
+        {" "}
+        {this.state.isLoading && (
+          <Spinner animation="border" role="status" variant="primary" />
+        )}
+        {displayMovieContainer()}
+        {this.state.isError && (
+          <Alert variant="danger">Something went wrong :(</Alert>
+        )}
+      </>
+    );
   }
 }
 
